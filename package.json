@@ -7,6 +7,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
+    "submit:dev":"eas build --platform ios --auto-submit --profile development",
+    "submit:preview":"eas build --platform ios --auto-submit --profile preview",
+    "submit:production":"eas build --platform ios --auto-submit --profile production",
     "eject": "expo eject"
   },
   "dependencies": {
