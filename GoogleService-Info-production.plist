@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>467829541317-f7lj0sfqa1ge3cogj0h3fbjujjd16308.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.467829541317-f7lj0sfqa1ge3cogj0h3fbjujjd16308</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAaen2CsKSlG9G66Hl61dA2ffcCPuVTieM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>467829541317</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.donchan.swarmplus</string>
+	<key>PROJECT_ID</key>
+	<string>swarmplus</string>
+	<key>STORAGE_BUCKET</key>
+	<string>swarmplus.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:467829541317:ios:6e5886e8b169953f06a3ac</string>
+	<key>DATABASE_URL</key>
+	<string>https://swarmplus.firebaseio.com</string>
+</dict>
+</plist>

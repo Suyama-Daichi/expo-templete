@@ -77,5 +77,3 @@ dist/
 
 # @end expo-cli
 ios/
-GoogleService-Info-develop.plist
-GoogleService-Info-production.plist
