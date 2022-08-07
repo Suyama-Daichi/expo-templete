@@ -7300,15 +7300,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-application@npm:^4.2.2":
-  version: 4.2.2
-  resolution: "expo-application@npm:4.2.2"
-  peerDependencies:
-    expo: "*"
-  checksum: c6088014fb0c89f8c04633c50fed4515c5ec67b582b9660824cbd9b30de849b0be0ac8a858d49b63da73b6bb2171d29048321f25d8bbc89effbe31717eb8ee99
-  languageName: node
-  linkType: hard
-
 "expo-application@npm:~4.1.0":
   version: 4.1.0
   resolution: "expo-application@npm:4.1.0"
@@ -14015,7 +14006,7 @@ __metadata:
     eslint-config-prettier: ^8.5.0
     eslint-plugin-react: ^7.30.1
     expo: ~45.0.0
-    expo-application: ^4.2.2
+    expo-application: ~4.1.0
     expo-asset: ~8.5.0
     expo-auth-session: ~3.6.1
     expo-constants: ~13.1.1

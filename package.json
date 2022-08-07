@@ -8,9 +8,9 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test": "jest --watchAll",
-    "submit:dev": "eas build --platform ios --auto-submit --profile development",
-    "submit:preview": "eas build --platform ios --auto-submit --profile preview",
-    "submit:production": "eas build --platform ios --auto-submit --profile production"
+    "submit:dev": "eas build --platform ios --profile development --auto-submit",
+    "submit:preview": "eas build --platform ios --profile preview --auto-submit",
+    "submit:production": "eas build --platform ios --profile production --auto-submit"
   },
   "jest": {
     "preset": "jest-expo"
@@ -23,7 +23,7 @@
     "@react-navigation/native-stack": "^6.1.0",
     "dotenv": "^16.0.1",
     "expo": "~45.0.0",
-    "expo-application": "^4.2.2",
+    "expo-application": "~4.1.0",
     "expo-asset": "~8.5.0",
     "expo-auth-session": "~3.6.1",
     "expo-constants": "~13.1.1",
