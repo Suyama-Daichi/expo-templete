@@ -1,8 +1,8 @@
-import { getApp, getApps, initializeApp } from 'firebase/app'
+import { getApps, initializeApp } from 'firebase/app'
 import Constants from 'expo-constants'
 import { getReactNativePersistence } from 'firebase/auth/react-native'
 // Optionally import the services that you want to use
-import { getAuth, initializeAuth } from 'firebase/auth'
+import { initializeAuth } from 'firebase/auth'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 //import {...} from "firebase/database";
 //import {...} from "firebase/firestore";

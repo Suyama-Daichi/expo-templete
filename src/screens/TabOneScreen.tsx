@@ -7,7 +7,7 @@ import { Button } from 'native-base'
 import useAuth from '@/hooks/useAuth'
 
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
-  const { request, promptAsync, signOut } = useAuth()
+  const { request, promptAsync, signOut, idToken } = useAuth()
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab One</Text>
@@ -15,6 +15,7 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
       <Button isLoading={!request} onPress={() => promptAsync()}>
         Googleでログイン
       </Button>
+      <Text>{idToken}</Text>
       <Button onPress={() => signOut()}>ログアウト</Button>
       <EditScreenInfo path="/screens/TabOneScreen.tsx" />
     </View>
