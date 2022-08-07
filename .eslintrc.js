@@ -10,6 +10,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
+    'plugin:react-hooks/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -19,7 +20,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'jest'],
+  plugins: ['react', '@typescript-eslint', 'jest', 'react-hooks'],
   rules: {
     // console.logは警告する
     'no-console': ['error'],
@@ -93,6 +94,10 @@ module.exports = {
       },
     ],
     'react/display-name': ['off'],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': ['warn', {
+      'additionalHooks': '(useRecoilCallback|useRecoilTransaction_UNSTABLE)'
+    }]
   },
   overrides: [
     {
