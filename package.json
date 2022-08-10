@@ -1,6 +1,6 @@
 {
   "name": "swarmplus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "start": "APP_ENV=develop expo start --dev-client",
     "android": "APP_ENV=develop expo run:android",

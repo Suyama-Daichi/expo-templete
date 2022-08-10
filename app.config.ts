@@ -30,6 +30,7 @@ export default {
   },
   assetBundlePatterns: ['**/*'],
   ios: {
+    buildNumber: '2',
     supportsTablet: true,
     bundleIdentifier: 'com.donchan.swarmplus',
     googleServicesFile:
