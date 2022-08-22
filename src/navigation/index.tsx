@@ -13,7 +13,7 @@ import { ColorSchemeName, Pressable } from 'react-native'
 import { EScreens } from '@/constants/Screens'
 import useColorScheme from '@/hooks/useColorScheme'
 import ModalScreen from '@/screens/ModalScreen'
-import TabOneScreen from '@/screens/TabOneScreen'
+import HomeScreen from '@/screens/HomeScreen'
 import LinkingConfiguration from './LinkingConfiguration'
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../../types'
 import Colors from '@/constants/Colors'
@@ -68,9 +68,9 @@ function BottomTabNavigator() {
     >
       <BottomTab.Screen
         name={EScreens.TAB_ONE}
-        component={TabOneScreen}
+        component={HomeScreen}
         options={({ navigation }: RootTabScreenProps<EScreens.TAB_ONE>) => ({
-          title: 'Tab One',
+          title: 'Home',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
           headerRight: () => (
             <Pressable
