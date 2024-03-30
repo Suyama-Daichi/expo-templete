@@ -1,0 +1,42 @@
+<app-nav-menu></app-nav-menu>
+<div class="row">
+    <div class="col-lg-2">
+        <app-sidebar (event)="catchSearchCondition($event)"></app-sidebar>
+    </div>
+    <div class='col-sm-12 col-lg-8 offset-lg-0 body-content'>
+        <div class="app-dayView">
+            <block-ui>
+                <div class="fc-toolbar row">
+                    <div class="col-6 col-lg-3 col-md-3">
+                        <app-date-selector [selectedDate]="selectedDate"></app-date-selector>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-3">
+                        <i class="fas fa-map-marker-alt icon"></i>{{calendarEvents?.length}}
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 f-container">
+                        <button type="button" class="fc-today-button fc-button fc-button-primary"
+                            (click)="onLastYear()">去年</button>
+                        <button type="button" class="fc-today-button fc-button fc-button-primary"
+                            (click)="onLastYearToday()">去年の今日</button>
+                        <button type="button" class="fc-today-button fc-button fc-button-primary"
+                            (click)="onToday()">今日</button>
+                        <div class="fc-button-group">
+                            <button type="button" class="fc-prev-button fc-button fc-button-primary" aria-label="prev"
+                                (click)="onPrevDate()">
+                                <span class="fc-icon fc-icon-chevron-left"></span>
+                            </button>
+                            <button type="button" class="fc-next-button fc-button fc-button-primary" aria-label="next"
+                                (click)="onNextDate()">
+                                <span class="fc-icon fc-icon-chevron-right"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <full-calendar #calendar defaultView="listDay" (eventClick)="openModal($event)"
+                    [events]="calendarEvents" deepChangeDetection="true" [plugins]="calendarPlugins"
+                    [defaultDate]="selectedDate" height="auto" locale="jaLocale" [header]=false>
+                </full-calendar>
+            </block-ui>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Debugger": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ClientSecret": "RVKEXOBMDVXNOQXYU51C4E5U3OJCEJ2C3O1OE2ZARI3XJ0OR",
+        "ClientId": "1DSKDVJVFM3FHGAREG1LUY2NWJVX452M0UVDO1KAAIVCMVZ5"
+      }
+    }
+  }
+}
